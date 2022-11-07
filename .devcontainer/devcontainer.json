@@ -9,6 +9,7 @@
 		"ASPNETCORE_ENVIRONMENT": "Staging",
 		"ASPNETCORE_URLS": "http://+:5001;https://+:5002",
 		"ASPNETCORE_Kestrel__Certificates__Default__Password": "password1",
-	    "ASPNETCORE_Kestrel__Certificates__Default__Path": "/home/vscode/.aspnet/https/aspnetapp.pfx"
+	    "ASPNETCORE_Kestrel__Certificates__Default__Path": "/home/vscode/.aspnet/https/aspnetapp.pfx",
+		"CONTAINER_ENV_VAR": "${localEnv:HOST_ENV_VAR}"
 	}
 }
