@@ -1,0 +1,14 @@
+{
+	"name": "C# (.NET)",
+	"dockerFile": "Dockerfile",
+	"forwardPorts": [5001, 5002],
+	"postCreateCommand": "dotnet --info",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"containerUser": "vscode",
+	"containerEnv": {
+		"ASPNETCORE_ENVIRONMENT": "Staging",
+		"ASPNETCORE_URLS": "http://+:5001;https://+:5002",
+		"ASPNETCORE_Kestrel__Certificates__Default__Password": "password1",
+	    "ASPNETCORE_Kestrel__Certificates__Default__Path": "/home/vscode/.aspnet/https/aspnetapp.pfx"
+	}
+}
